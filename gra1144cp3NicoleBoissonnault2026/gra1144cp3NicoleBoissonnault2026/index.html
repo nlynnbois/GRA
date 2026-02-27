@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Alice In Wonderland | Nicole Boissonnault, 2026</title>
+
+<!-- Google Font: Henny Penny -->
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+
+<style type="text/css">
+body {
+    margin: 0;
+    min-height: 300vh;
+    background: 
+}
+
+wrapper {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    padding: 20px 100px;
+    align-items: center;
+    background: transparent;
+}
+
+header img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    transition: 0.3s ease;
+}
+
+/* Apply Henny Penny to nav-left and nav-right */
+.nav-left a,
+.nav-right a {
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header a:hover {
+    color: #b68c5a;
+    text-shadow: 0 0 8px rgba(182, 140, 90, 0.6);
+}
+
+.nav-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 150px;
+}
+
+.nav-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 150px;
+}
+
+.corner-img {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 500px;
+    height: auto;
+	
+}
+
+#alice-falling {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    z-index: 999;
+    animation: alicefalling 5s ease-in infinite;  /* SLOWER FALL */
+}
+
+@keyframes alicefalling {
+    0% { 
+        top: 5%; 
+        opacity: 1; 
+        transform: translate(-50%, -50%) rotate(0deg); 
+    }
+    50% {
+        top: 25%;
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(-6deg) scale(1.03);
+    }
+    100% { 
+        top: 35%;
+        opacity: 0; 
+        transform: translate(-50%, -50%) rotate(-12deg) scale(1.1); 
+    }
+}
+
+.header-img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.scroll-spacer {
+    height: 100vh;
+    background: white;
+}
+
+.footer-video {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  position: relative;
+  z-index: 1;
+  margin-top: 50vh;
+  background: white;
+}
+
+.video-wrap {
+  width: min(900px, 90vw);
+  aspect-ratio: 16 / 9;
+  position: relative;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-trailer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+  z-index: 2;
+}
+
+.video-trailer:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.play-icon {
+  font-size: 64px;
+  margin-right: 20px;
+}
+</style>
+</head>
+
+<body>
+	<img id="alice-falling" src="alice-falling copy.png" alt="alice-falling">
+	 
+<wrapper>
+  <header>
+	  <nav class="nav-left">
+	   <a href="#">This Way</a>
+	   <a href="#">Wrong Way</a>
+	  </nav>
+
+	<img class="header-img" src="intro-import.jpg" alt="Alice In Wonderland">
+	  
+	  <nav class="nav-right">
+		 <a href="#">Somewhere</a>
+		 <a href="#">Overwhere</a>
+	  </nav>
+  </header>	
+
+  <div class="scroll-spacer"></div>
+  <div class="scroll-spacer"></div>
+
+	<footer class="footer-video">
+	  <div class="video-wrap">
+	    <a href="https://youtu.be/lyNAG-WxcxA?start=30" target="_blank" class="video-trailer">
+	      <span class="play-icon">▶</span>
+	      Watch Your Original Trailer
+	    </a>
+	  </div>
+	</footer>
+	
+	<img src="drink-me.jpg" class="corner-img" alt="decorative image">
+</wrapper>
+
+</body>
+</html>
