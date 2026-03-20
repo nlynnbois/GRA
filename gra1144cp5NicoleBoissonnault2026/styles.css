@@ -1,0 +1,38 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    background-color: #76814A;
+    background-attachment: fixed;
+}
+.logo {
+    width: 200px;
+    margin: 10px;
+    height: 200px;
+    vertical-align: middle;
+}
+h1   {
+    display: inline;
+}
+wrapper  {
+    width: 1920px;
+    margin: auto;
+    display: block;
+}
+nav a li {
+    padding: 20px;
+    display: inline-block;
+    background-color: #C5BEBF;
+}
+nav a li:hover {
+    background-color: #181E31;
+}
+main {
+    height: 1000px;
+}
+footer {
+    color: #232121;
+}
+nav {
+    text-decoration: none;
+    text-align: center;
+}
