@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Public Theater | Nicole Boissonnault, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+	
+<style>
+	.logo img{
+		height: 60px;
+		
+	}
+	header{
+	display: flex;
+	align-items: center;
+	padding: 20px 60px;
+	}
+	nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	}
+	nav a{
+	text-decoration: none;
+	font-family:"Limelight", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: crimson;
+	padding: 8px 15px;
+	transition: 0.3s;
+	}
+	nav{
+	margin-left: auto;
+	
+	}
+	.hero > img{
+		width: 100%;
+		height:auto;
+		object-fit: cover;
+		display: block;
+	}
+	body{
+		margin: 0;
+	}
+	
+	.repeat-nav{
+		margin:10px 0;
+		display: flex;
+		align-items: center;
+		padding: 20px 60px;
+		}
+	.calendar{
+		position: absolute;
+		bottom: 160px;
+		right: 0px;
+		}
+	.hero-map{
+		position: relative;
+	}
+	.calendar iframe{
+		width: 350px;
+		height: 250px;
+		border-radius: 8px;
+		box-shadow: 0 8px 20px rgba (0,0,0,0.35)
+	}
+	
+	.map{
+	position:absolute;
+	bottom: 160px;
+	left:0px;
+	}
+	
+	.map iframe{
+		width: 350px;
+		height: 250px;
+		border-radius: 8px;
+		box-shadow: 0 8px 20px rgba (0,0,0,0.35)
+		
+		
+	}
+	.site-footer{
+		text-align: center;
+		font-size:12px;
+		line-height: 1.6;
+	}
+	
+	nav a:hover {
+		background-color: crimson;
+		color: white;
+		border-radius: 4px;
+	}
+	.hero{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		padding-bottom: 60px;
+		position: relative;
+		padding-bottom: 160px;
+			
+		}
+	.hero-title{
+		position: absolute;
+		top: 36%;
+		left: 47%;
+		transform: translate(-50%,-50%);
+		color:white;
+		font-weight: 700;
+		font-size: 33px;
+		letter-spacing: 2px;
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		text-shadow:0 0 10px 
+		filter: drop-shadow(0 0 20px white) drop-shadow(0 0 40px rgba (255,255,255,0.7));
+        
+	z-index: 2;
+		}
+	
+	.hero-title:after{
+		content: "";
+		position: absolute;
+		left:50px;
+		top: 110%;
+		transform: translateX(-50%);
+		width: 420px;
+		height: 40px;
+		font-family: "Limelight", sans-serif;
+		
+		background: radial-gradient(
+		ellipse at center,
+		rgba(255,255,255,255,0.7)0%,
+		rgba(255,255,255,0.3)40%,
+		rgba(255,255,255,0)70%
+			);
+		filter: blur(12px)
+			z-index:-1;
+			
+	}
+	.overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.45);
+		z-index: 1;
+	
+	}
+	.show-posters{
+	display: flex;
+		justify-content: center;
+		gap:80px;
+		margin-top: -600px;
+		}
+	.show-poster{
+		width: 350px;
+		height: 250px;
+		object-fit: cover;
+		border-radius: 12px;
+		border: 3px solid white;
+		box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+		transition: transform 0.3s ease;
+	}
+	.show-card{
+		text-align: center;
+	}
+	.show-card p{
+		color: whitesmoke;
+
+		margin-top: 10px;
+		font-size: 20px;
+		font-family: "Limelight", sans-serif;
+	}
+	.poster{
+		width: 25px; !important;
+		height: auto;
+		border-radius: 6px;
+		border: 3px #FFFCC9;
+;
+		
+		}
+	.show-poster:hover{
+		transform: scale(1.08);
+	
+	}
+	.center-poster{
+		width: 60px; !important;
+		}
+	.video{
+		position: absolute;
+		bottom: 40px;
+		left: 50%;
+		transform: translateX(-50%)
+	}
+	.video iframe{
+		width: 800px;
+		height: 450px;
+		border-radius: 10px;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+		
+	}
+	
+	
+</style>
+</head>
+
+<body>
+	<header>
+	 <div class="logo">
+		 <img src="public-logo.png" alt="Theater Logo">
+		</div>
+<nav>
+<ul>
+<li><a href="#">TICKETS</a></li>
+<li><a href="#">MEDIA</a></li>
+<li><a href="#">LOCATION</a></li>
+</ul>
+</nav>	
+		  
+	</header>
+<section class="hero">
+  <img src="public-inside.jpg" alt="Theater Image">
+<div class="overlay"></div>
+	<h1 class="hero-title">Upcoming Shows</h1>
+<div class="show-posters">
+	<div class="show-card">
+	<img src="hells-kitchen.jpeg" class="show-poster">
+	<p>Hell's Kitchen - March 16th, 2026</p>
+	</div>
+	<div class="show-card">
+	<img src="hamilton.jpg" class="show-poster">
+		<p>Hamilton - March 17th, 2026 </p>
+	</div>
+	<div class="show-card">
+	<img src="much.jpeg" class="show-poster">
+		<p>Much Ado About Nothing -March 18th, 2026</p>
+	</div>
+	
+	</div>
+	</section>
+<header class="repeat-nav">
+	<div class="logo"> </div>
+	<nav>
+<ul>
+<li><a href="#">&nbsp;</a></li>
+<li><a href="#">&nbsp;</a></li>
+<li><a href="#">&nbsp;</a></li>
+</ul>
+</nav>	
+ 
+	</header>
+<section class="hero hero-map">
+	<img src="public-lights.jpg" alt="Theater Image">
+
+	<div class="calendar">
+	<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&showCalendars=0&src=Nzc3bmljb2xlbHlubkBnbWFpbC5jb20&src=ZjZmZGM0NjU2ODVlNjUyOTY3NWRmNWIwNmI5NDE0ZTk5ZTFlZGFhZjQzMGVlOTRiMjVjMmJkNmVjYTE2NDZkNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237cb342&color=%23f6bf26&color=%23ef6c00" 
+	style="border:0"
+	width="350" 
+	height="250" 
+	frameborder="0" 
+	scrolling="no"></iframe>
+	</div>
+</section>
+	<header class="repeat-nav">
+		<div class="logo">
+		 <img src="public-logo.png" alt="Theater Logo">
+		</div>
+<nav>
+<ul>
+<li><a href="#">TICKETS</a></li>
+<li><a href="#">MEDIA</a></li>
+<li><a href="#">LOCATION</a></li>
+</ul>
+</nav>	
+	</header>
+	<section class="hero hero-map">
+	<img src="public-outside.jpg" alt="Theater Outside">
+	<div class="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4979583355307!2d-73.99447822328074!3d40.72906717139102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599aff739a83%3A0xea0adbc1f438a974!2sThe%20Public%20Theater!5e0!3m2!1sen!2sus!4v1773251629835!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+
+	</section>
+<footer class="site-footer">
+	
+		<p> 2026, Nicole Boissonnault 
+	    </p>
+	
+	<p>This is a fictitious web page created by Nicole Boissonnault solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category
+	</p>
+	</footer>
+	</body>
+</html>
