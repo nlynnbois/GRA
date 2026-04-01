@@ -12,7 +12,7 @@
 
 <body>
 <wrapper>
-  <header> <img src="" alt="" width="" height="" class="logo">
+  <header> <img src="face%20card/clairo4.jpg" width="" height="" class="logo">
     <h1>Clairo</h1>
   </header>
   <nav>
@@ -30,7 +30,39 @@
   <!-- InstanceBeginEditable name="EditRegion1" -->
   <main>
     <h2>Photo Gallery</h2>
-  </main>
+	    <a href="#" class="join-btn">Third Times A Charm</a>
+	 
+	  <div class="slideshow">
+	  <img src="concert-photos/concerts1.jpg" class="slide active" alt="Concert Photo 1">
+	  <img src="concert-photos/concerts2.jpg" class="slide" alt="Concert Photo 2">
+	  <img src="concert-photos/concerts3.jpg" class="slide" alt="Concert Photo 3">
+	  <img src="concert-photos/concerts4.jpg" class="slide" alt="Concert Photo 4">
+	  <img src="concert-photos/concerts5.jpg" class="slide" alt="Concert Photo 5">
+	  <img src="concert-photos/concerts6.jpg" class="slide" alt="Concert Photo 6">
+	  <img src="concert-photos/concerts7.jpg" class="slide" alt="Concert Photo 7">
+	  <img src="concert-photos/concerts8.jpg" class="slide" alt="Concert Photo 8">
+		 <button class="prev">❮</button>
+		 <button class="next">❯</button>
+	 </div>
+		  <script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+document.querySelector(".next").onclick = function() {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}
+
+document.querySelector(".prev").onclick = function() {
+    slides[index].classList.remove("active");
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add("active");
+}
+</script>
+	  
+  
+	</main>
   <!-- InstanceEndEditable -->
 <footer><p>© 2026, Nicole Boissonnault. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
 </wrapper>

@@ -12,7 +12,7 @@
 
 <body>
 <wrapper>
-  <header> <img src="" alt="" width="" height="" class="logo">
+  <header> <img src="../face card/clairo4.jpg" width="" height="" class="logo">
     <h1>Clairo</h1>
   </header>
   <nav>
