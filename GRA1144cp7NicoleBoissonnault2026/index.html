@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>European Travels | Nicole Boissonnault, 2026</title>
+	<script src="https://kit.fontawesome.com/80f190902f.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+<style type="text/css">
+body {
+    margin: 0;
+    background-image: url(Italy-Venice-77.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-position: 0 100px;
+}
+header {
+    height: auto;
+    background-color: floralwhite;
+	position: relative;
+}
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+}
+#Tabs1 ul {
+    border: none;
+    background-color: transparent;
+    background-image: none;
+	display: flex;
+	gap:90px;
+	margin-bottom: 10px;
+	padding-left: 0;
+	
+}
+#Tabs1 {
+    background-image: none;
+    background-color: rgba(255,255,255,0.50);
+	margin-top: 40px;
+	padding: 25px;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Antic Didone", serif;
+	box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+	
+	
+}
+#Tabs1 ul li {
+    text-align: center;
+	padding: 3px 3px;
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+#Tabs1 ul li i {
+    font-size: 20px;
+    color: rgba(2,2,2,1.00);
+}
+	#tabs-1 div{
+		display:grid;
+		grid-template-columns: 16% 16% 16% 16% 16% 10%;
+		gap: 10px;
+	}
+	
+	#tabs-2 div{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr auto;
+		gap:10px;
+	}
+	
+	#tabs-3 div{
+		display: grid;
+		grid-template-columns: 2fr 2fr 1fr 1fr auto;
+		gap: 10px;
+	}
+	
+	#tabs-4 div{
+		display: grid;
+		grid-template-columns: 2fr 2fr 1fr 1fr 1fr auto;
+		gap: 10px;
+	}
+	
+	#tabs-5 div{
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr auto;
+		gap:10px;
+	}
+	input[type="submit"]{
+		background-color: rgba(108,193,247,1);
+		color: white;
+		border: none;
+		border-radius: 8px;
+		padding: 10px 15px;
+	}
+h1 {
+    padding: 30px;
+    margin: 0;
+    font-family: "Antic Didone", serif;
+	font-style: oblique;
+	font-size: 25px;
+	
+	
+}
+input, select {
+    border-radius: 8px;
+    border: thin solid lightgray;
+    padding: 10px;
+}
+	#Tabs1 p{
+		margin-bottom: 15px;
+	}
+	
+	.ui-tabs-active{
+		background: white !important;
+		border-radius: 6px;
+		
+}
+	#Tabs1 input,
+	#Tabs1 select {
+		font-family: 'Antic Didone', serif;
+		font-size: 14px;
+		color: #444;
+	}
+	.top-right{
+		top: 20px;
+		right: 40px;
+	}
+	.contact-btn{
+		background-color: #c8a27a;
+		color: white;
+		padding: 10px 18px;
+		text-decoration: none;
+		font-size: 15px;
+		letter-spacing: 1px;
+		border-radius: 4px;
+		
+	}
+	.contact-btn:hover {
+		background-color: #b38a65;
+	}
+	.header-row{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.tagline{
+		text-align: center;
+		font-family: "Antic Didone", serif;
+		font-size: 30px;
+		letter-spacing: 0.5px;
+		margin-bottom: 25px;
+		margin: 40px 0 20px 0;
+	}
+	.photo-row{
+		display: flex;
+		gap:20px;
+		padding: 60px 40px;
+		margin-top: 40px;
+		
+	}
+	.photo-row img{
+		width: 33%;
+		height: 250px;
+		object-fit: cover;
+		
+		transition: 0.3s;
+	}
+	.photo-row img:hover{
+		opacity: 1;
+		transform: scale(1.02);
+	}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header>
+  <wrapper class="header-row">
+    <h1>European Travels.</h1>
+	  <div class="top-right">
+		<a href="#" class="contact-btn">CONTACT US</a>
+	</div>
+  </wrapper>
+</header>
+<wrapper>
+	<p class="tagline">Experience Europe, Effortlessly.</p>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><i class="fa-solid fa-plane-departure"></i><br>
+Flights</a></li>
+      <li><a href="#tabs-2"><i class="fa-solid fa-hotel"></i><br>
+Stays</a></li>
+      <li><a href="#tabs-3"><i class="fa-solid fa-car-side"></i><br>
+Cars</a></li>
+      <li><a href="#tabs-4"><i class="fa-solid fa-suitcase"></i><br>
+Packages</a></li>
+      <li><a href="#tabs-5"><i class="fa-solid fa-child-reaching"></i><br>
+Activities</a></li>
+    </ul>
+    <div id="tabs-1">
+      <p>Find your Flights</p>
+      <div>
+        <input type="text" placeholder="Leaving From">
+        <input type="text" placeholder="Going To"><input type="date"><input type="date"><select>
+          <option value="0" selected="selected">Number of Travelers</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          </select><input type="submit" class="search" value="Search">
+      </div>
+    </div>
+    <div id="tabs-2">
+      <p>Find your Hotels</p>
+	<div>
+		<input type="text" placeholder="Where To">
+		<input type="date">
+		<input type="date">
+		
+		<select>
+			<option>Guests</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+		</select>
+		
+		<input type="submit" value="Search">
+		</div>
+    </div>
+    <div id="tabs-3">
+      <p>Find your Car Rentals</p>
+     <div>
+	  <input type="text" placeholder="Pick-up Location">
+	  <input type="text" placeholder="Drop-off Loaction">
+	  <input type="date">
+	  <input type="date">
+	  <input type="submit" value="Search">
+	</div>
+</div>
+    <div id="tabs-4">
+      <p>Bundle and Save</p>
+		
+	<div>
+		<input type="text" placeholder="Leaving From">
+		<input type="text" placeholder="Going To">
+		<input type="date">
+		<input type="date">
+		
+		<select>
+			<option>Travelers</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+		</select>
+		
+		<input type="submit" value="Search">
+		</div>
+    </div>
+    <div id="tabs-5">
+      <p>Things to Do</p>
+		
+	<div>
+		<input type="text" placeholder="Where To">
+		<input type="date">
+		
+		<select>
+			<option>Travelers</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+		</select>
+		
+		<input type="submit" value="Search">
+		
+		</div>
+    </div>
+  </div>
+</wrapper>
+	<div class="photo-row">
+	 <img src="665df4f13b65f87aa7d5df78_6 Sicile Cefalu.jpg">
+	 <img src="00-amsterdam-guide-promo-cgwl-videoSixteenByNine3000.jpg">
+	 <img src="sicily-blog-300273-2022-Taormina-Sicily-Hybris.jpg">
+	
+	</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+	
+</script>
+</body>
+</html>
